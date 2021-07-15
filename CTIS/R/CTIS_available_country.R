@@ -17,13 +17,15 @@
 #' @importFrom jsonlite "fromJSON"
 
 CTIS_available_country <- function(country) {
+# core of the function adapted from
+# https://gisumd.github.io/COVID-19-API-Documentation/docs/tutorials/tutorials.html
     # concatenate the strings for the retrieving url path
-    path = paste0("https://covidmap.umd.edu/api/datesavail?country=", country)
+    path <- paste0("https://covidmap.umd.edu/api/datesavail?country=", country)
     # request the data from api
-    request = GET(url = path)
+    request <- GET(url = path)
 
     # make sure that the content is encoded with "UTF-8"
-    response = content(request, as = "text", encoding = "UTF-8")
+    response <- content(request, as = "text", encoding = "UTF-8")
 
     # set up the dataframe to use
 

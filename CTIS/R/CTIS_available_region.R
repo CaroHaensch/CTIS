@@ -18,13 +18,15 @@
 #' @importFrom jsonlite "fromJSON"
 
 CTIS_available_region  <- function(country, region) {
-    path = paste0("https://covidmap.umd.edu/api/datesavail?country=",
+# core of the function adapted from
+# https://gisumd.github.io/COVID-19-API-Documentation/docs/tutorials/tutorials.html
+    path <- paste0("https://covidmap.umd.edu/api/datesavail?country=",
                   country, "&region=", region)
     # request the data from api
-    request = GET(url = path)
+    request <- GET(url = path)
 
     # make sure that the content is encoded with "UTF-8"
-    response = content(request, as = "text", encoding = "UTF-8")
+    response <- content(request, as = "text", encoding = "UTF-8")
 
     # set up the dataframe to use
     tryCatch({fromJSON(response, flatten = TRUE) %>% data.frame() %>% return()},

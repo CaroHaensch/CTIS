@@ -28,16 +28,18 @@
 #' @importFrom httr "content"
 #' @importFrom jsonlite "fromJSON"
 #'
-CTIS_open_data_region = function(indicator, type, country, region, daterange) {
+CTIS_open_data_region <- function(indicator, type, country, region, daterange) {
+# core of the function adapted from
+# https://gisumd.github.io/COVID-19-API-Documentation/docs/tutorials/tutorials.html
     # concatenate the strings for the retrieving url path
-    path = paste0("https://covidmap.umd.edu/api/resources?indicator=", indicator,
+    path <- paste0("https://covidmap.umd.edu/api/resources?indicator=", indicator,
                   "&type=", type, "&country=", country, "&region=", region,
                   "&daterange=", daterange)
     # request the data from api
-    request = GET(url = path)
+    request <- GET(url = path)
 
     # make sure that the content is encoded with "UTF-8"
-    response = content(request, as = "text", encoding = "UTF-8")
+    response <- content(request, as = "text", encoding = "UTF-8")
 
     # set up the dataframe to use
     tryCatch({fromJSON(response, flatten = TRUE) %>% data.frame() %>% return()},

@@ -1,7 +1,8 @@
 #' @title CTIS_microdata
 #'
-#' @description Provides microdata for the date specified from the Global
-#' COVID-19 Trends and Impact Survey
+#' @description Downloads, saves as a .csv in the working directory and then
+#' loads the microdata for thedate specified from the Global COVID-19 Trends and
+#' Impact Survey
 #' @param username Usernme for the microdata API
 #' @param password Password for the microdata API
 #' @param surveyversion Current version of the Global COVID-19 Trends and Impact
