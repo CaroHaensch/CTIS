@@ -9,7 +9,7 @@ This package offers an R interface for the APIs connected to the Global COVID-19
 
 The University of Maryland Social Data Science Center Global COVID-19 Trends and Impact Survey, in partnership with Facebook, is available in 56 languages. A representative sample of Facebook users is invited on a daily basis to report on topics including, for example, symptoms, social distancing behavior, vaccine acceptance, mental health issues, and financial constraints. Facebook provides weights to reduce nonresponse and coverage bias. 
 
-Data for the United States is not included in the Global COVID-19 Trends and Impact Survey but is available at covidcast.cmu.edu.
+Data for the United States is not included in the Global COVID-19 Trends and Impact Survey but is available at https://delphi.cmu.edu/covidcast/.
 
 ## Open Data and Microdata API
 
