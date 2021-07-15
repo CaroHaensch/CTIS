@@ -7,13 +7,13 @@ This package offers an R interface for the APIs connected to the Global COVID-19
 
 ## The Global COVID-19 Trends and Impact Survey
 
-The University of Maryland Social Data Science Center Global COVID-19 Trends and Impact Survey, in partnership with Facebook, is available in 56 languages. A representative sample of Facebook users is invited on a daily basis to report on topics including, for example, symptoms, social distancing behavior, vaccine acceptance, mental health issues, and financial constraints. Facebook provides weights to reduce nonresponse and coverage bias. 
+The University of Maryland Social Data Science Center Global COVID-19 Trends and Impact Survey [1], in partnership with Facebook, is available in 56 languages. A representative sample of Facebook users is invited on a daily basis to report on topics including, for example, symptoms, social distancing behavior, vaccine acceptance, mental health issues, and financial constraints. Facebook provides weights to reduce nonresponse and coverage bias. 
 
 Data for the United States is not included in the Global COVID-19 Trends and Impact Survey but is available at https://delphi.cmu.edu/covidcast/.
 
 ## Open Data and Microdata API
 
-Country and region-level statistics are published daily via the opendata API [2] and dashboards, and microdata is available for researchers via data use agreements. Over half a million responses are collected daily. For more information on the data, see https://covidmap.umd.edu/. While the open data is available without an account, the microdata API requires an account that can be requested here: https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/.
+Country and region-level statistics are published daily via the opendata API and dashboards, and microdata is available for researchers via data use agreements. Over half a million responses are collected daily. For more information on the data, see https://covidmap.umd.edu/. While the open data is available without an account, the microdata API requires an account that can be requested here: https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/.
 
 
 ## Installation
