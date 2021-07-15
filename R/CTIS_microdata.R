@@ -3,12 +3,16 @@
 #' @description Downloads, saves as a .csv in the working directory and then
 #' loads the microdata for thedate specified from the Global COVID-19 Trends and
 #' Impact Survey
-#' @param username Usernme for the microdata API
-#' @param password Password for the microdata API
+#' @param username Username for the microdata API, please check
+#' https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/
+#' if you do not already have an account
+#' @param password Password for the microdata API, please check
+#' https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/
+#' if you do not already have an account
 #' @param surveyversion Current version of the Global COVID-19 Trends and Impact
-#' Survey: July 2021: v1.7
+#' Survey. Current version during July 2021: v1.7
 #' @param date Date in the format "YYYY-MM-DD"
-#' @param type "full" or "partA" version
+#' @param type "full" or "parta" version
 #'
 #' @return A data frame object that includes the microdata data for the date
 #' specified from the Global COVID-19 Trends and Impact Survey

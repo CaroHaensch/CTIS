@@ -13,16 +13,20 @@ CTIS_microdata(
 )
 }
 \arguments{
-\item{username}{Usernme for the microdata API}
+\item{username}{Username for the microdata API, please check
+https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/
+if you do not already have an account}
 
-\item{password}{Password for the microdata API}
+\item{password}{Password for the microdata API, please check
+https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/
+if you do not already have an account}
 
 \item{date}{Date in the format "YYYY-MM-DD"}
 
 \item{surveyversion}{Current version of the Global COVID-19 Trends and Impact
-Survey: July 2021: v1.7}
+Survey. Current version during July 2021: v1.7}
 
-\item{type}{"full" or "partA" version}
+\item{type}{"full" or "parta" version}
 }
 \value{
 A data frame object that includes the microdata data for the date
