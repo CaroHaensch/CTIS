@@ -1,8 +1,10 @@
 ---
 title: "The CTIS R package"
-author: Anna-Carolina Haensch, Yue Xiong
-date: "15.7.2021"
-output: html_document
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The CTIS R package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r, include = FALSE}

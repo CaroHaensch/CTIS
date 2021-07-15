@@ -1,0 +1,74 @@
+library("RCurl")
+devtools::install_github("hrbrmstr/curlconverter")
+library(curlconverter)
+library(httr)
+library(jsonlite)
+library(httr)
+library('R.utils')
+
+
+
+get_dataframe_from_microdata <- function(url, username, password) {
+  # getting response from the curl url
+  response <- GET(url = url,
+              config = authenticate(username, password), 
+              add_headers("Content-Type: application/json"),
+              encode = 'json')
+  parsed <- jsonlite::fromJSON(content(response, "text", encoding = "UTF-8"), simplifyVector = FALSE)
+  
+  # convert the parsed data into a dataframe
+  dataframe <- as.data.frame(parsed)
+  
+  return(dataframe)
+  
+}
+username <- 'yue.xiong@stat.uni-muenchen.de'
+### URL can be set as
+# for checking versions: url = https://covidmap.umd.edu/fbsurvey/microdata
+# for checking years available for analysis: url = https://covidmap.umd.edu/fbsurvey/microdata/v1.7
+# for checking months available: url = https://covidmap.umd.edu/fbsurvey/microdata/v1.7/2020
+# for checking list of files available: url = https://covidmap.umd.edu/fbsurvey/microdata/v1.7/2020/05
+password <- 'covid19~yx'
+url <- "https://covidmap.umd.edu/fbsurvey/microdata/v1.7/2020/05"
+df <- get_dataframe_from_microdata(url = url, username = username, password = password)
+head(df)
+
+
+## downloading gz compressed files and unzipping files into csv format
+
+# first of all, write the gz files into disk
+username <- 'yue.xiong@stat.uni-muenchen.de'
+password <- 'covid19~yx'
+
+# based on your own needs, the gz file url can be modified
+fileUrl <- "https://covidmap.umd.edu/fbsurvey/microdata/v1.7/2020/04/2020-04-01_parta.csv.gz"
+fileName <- 
+GET(fileUrl, authenticate(username, password), 
+    write_disk(fileName), timeout(1000))
+
+downloaded_dataframe <- function(username, password, fileUrl, fileName) {
+  
+  GET(fileUrl, authenticate(username, password), 
+      write_disk(paste0(fileName, ".csv.gz")), timeout(1000))
+  
+  df <- gunzip(paste0(getwd(), "/", fileName, ".csv.gz"), remove=FALSE)
+  # the corresponding csv files is then generated in the same folder path
+  df <- read.csv(paste0(getwd(), "/", fileName, ".csv"))
+  return(df)
+}
+
+# remember to check the date and months available for analysis
+username <- 'yue.xiong@stat.uni-muenchen.de'
+password <- 'covid19~yx'
+
+# based on your own needs, the gz file url can be modified
+fileUrl <- "https://covidmap.umd.edu/fbsurvey/microdata/v1.7/2020/04/2020-04-26_parta.csv.gz"
+# similar to the upper setting with fileUrl
+fileName <- "2020-04-26_parta"
+
+download_df <- downloaded_dataframe(username = username, 
+                                    password = password, 
+                                    fileUrl = fileUrl,
+                                    fileName = fileName)
+download_df
+

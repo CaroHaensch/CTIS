@@ -1,0 +1,28 @@
+{
+    "id": "991A2DB9",
+    "path": "~/GitHub/CTIS2/vignettes/CTIS_package.Rmd",
+    "project_path": "vignettes/CTIS_package.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1626340013595.0,
+    "source_on_save": false,
+    "relative_order": 14,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "124,0",
+        "scrollLine": "0",
+        "last_setup_crc32": "",
+        "working_dir": "project"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1626340426,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1626340426959,
+    "read_only": false,
+    "read_only_alternatives": []
+}

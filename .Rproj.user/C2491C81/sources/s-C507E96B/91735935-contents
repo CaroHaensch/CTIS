@@ -1,9 +1,10 @@
 ---
 title: "The CTIS R package"
-author: Anna-Carolina Haensch, Yue Xiong
-date: "15.7.2021"
+author: "Anna-Carolina Haensch, Yue Xiong"
+date: "15 7 2021"
 output: html_document
 ---
+
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -34,7 +35,7 @@ Country and region-level statistics are published daily via the opendata API [2]
 
 As a first step, we install and load the package. At the moment, the package is only on Github, but we also plan to publish it on CRAN.
 
-```{r setup}
+```{r}
 # Installation (required only once)
 # remotes::install_github("CaroHaensch/CTIS")
 
