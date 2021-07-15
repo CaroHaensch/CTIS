@@ -19,7 +19,7 @@ The University of Maryland Social Data Science Center Global COVID-19 Trends and
 
 Data for the United States is not included in the Global COVID-19 Trends and Impact Survey but is available at https://delphi.cmu.edu/covidcast/.
 
-## Open Data and Microdata API
+## Opendata and Microdata API
 
 Country and region-level statistics are published daily via the opendata API and dashboards, and microdata is available for researchers via data use agreements. Over half a million responses are collected daily. For more information on the data, see https://covidmap.umd.edu/. While the open data is available without an account, the microdata API requires an account that can be requested here: https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/.
 
@@ -62,10 +62,10 @@ head(CTIS_Bavaria_available_dates)
 
 ```
 
-### Load data from the Open Data API
+### Load data from the Opendata API
 
 
-As already mentioned, country and region-level statistics are published daily  via the opendata API [2] and dashboards.
+As already mentioned, country and region-level statistics are published daily via the Opendata API [2] and dashboards.
 
 A full list of indicators is available here:
 https://gisumd.github.io/COVID-19-API-Documentation/docs/indicators/indicators.html
