@@ -2,7 +2,7 @@
 % Please edit documentation in R/CTIS_microdata.R
 \name{CTIS_microdata}
 \alias{CTIS_microdata}
-\title{CTIS_microdata}
+\title{Downloads CTIS microdata for the date specified}
 \usage{
 CTIS_microdata(
   username,
@@ -26,7 +26,7 @@ if you do not already have an account}
 \item{surveyversion}{Current version of the Global COVID-19 Trends and Impact
 Survey. Current version during July 2021: v1.7}
 
-\item{type}{"full" or "parta" version}
+\item{type}{Version "full" or "parta"}
 }
 \value{
 A data frame object that includes the microdata data for the date
@@ -34,6 +34,6 @@ specified from the Global COVID-19 Trends and Impact Survey
 }
 \description{
 Downloads, saves as a .csv in the working directory and then
-loads the microdata for thedate specified from the Global COVID-19 Trends and
-Impact Survey
+loads the microdata for the date specified from the Global COVID-19 Trends
+and Impact Survey
 }

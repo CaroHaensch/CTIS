@@ -2,7 +2,7 @@
 % Please edit documentation in R/CTIS_available_country.R
 \name{CTIS_available_country}
 \alias{CTIS_available_country}
-\title{CTIS_available_country}
+\title{Check availability of CTIS data for a country}
 \usage{
 CTIS_available_country(country)
 }

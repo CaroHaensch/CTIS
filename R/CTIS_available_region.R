@@ -1,4 +1,4 @@
-#' @title CTIS_available_region
+#' @title Check availability of CTIS data for a region in a country
 #'
 #' @description Provides a list of dates for which Global COVID-19 Trends and
 #' Impact Survey data is available for a region in a country

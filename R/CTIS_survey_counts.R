@@ -1,4 +1,4 @@
-#' @title CTIS_survey_counts
+#' @title Provides the number of full and PartA responses for a specific date
 #'
 #' @description Provides data for the number of full and PartA responses for a
 #' specific date from the Global COVID-19 Trends and Impact Survey

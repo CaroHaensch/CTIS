@@ -2,7 +2,7 @@
 % Please edit documentation in R/CTIS_open_data_region.R
 \name{CTIS_open_data_region}
 \alias{CTIS_open_data_region}
-\title{CTIS_open_data_region}
+\title{Provides CTIS data for the indicator, region and date specified}
 \usage{
 CTIS_open_data_region(indicator, type, country, region, daterange)
 }
@@ -25,7 +25,7 @@ A data frame object that includes the indicator data for the country,
 region and date specified from the Global COVID-19 Trends and Impact Survey
 }
 \description{
-Provides data for the indicator, country, region date and type
+Provides data for the indicator, country, region, date and type
 specified from the Global COVID-19 Trends and Impact Survey
 }
 \examples{

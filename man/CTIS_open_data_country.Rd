@@ -2,7 +2,7 @@
 % Please edit documentation in R/CTIS_open_data_country.R
 \name{CTIS_open_data_country}
 \alias{CTIS_open_data_country}
-\title{CTIS_open_data_country}
+\title{Provides CTIS data for the indicator, country and date specified}
 \usage{
 CTIS_open_data_country(indicator, type, country, daterange)
 }

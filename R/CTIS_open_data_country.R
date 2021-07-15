@@ -1,4 +1,4 @@
-#' @title CTIS_open_data_country
+#' @title Provides CTIS data for the indicator, country and date specified
 #'
 #' @description Provides data for the indicator, country, date and type
 #' specified from the Global COVID-19 Trends and Impact Survey

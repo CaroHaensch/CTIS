@@ -1,6 +1,6 @@
-#' @title CTIS_open_data_region
+#' @title Provides CTIS data for the indicator, region and date specified
 #'
-#' @description Provides data for the indicator, country, region date and type
+#' @description Provides data for the indicator, country, region, date and type
 #' specified from the Global COVID-19 Trends and Impact Survey
 #' @param indicator Indicator variable, e.g., "vaccine_acpt", "covid_vaccine",
 #' etc. Please refer to

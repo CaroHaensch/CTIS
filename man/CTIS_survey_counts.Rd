@@ -2,7 +2,7 @@
 % Please edit documentation in R/CTIS_survey_counts.R
 \name{CTIS_survey_counts}
 \alias{CTIS_survey_counts}
-\title{CTIS_survey_counts}
+\title{Provides the number of full and PartA responses for a specific date}
 \usage{
 CTIS_survey_counts(date)
 }
