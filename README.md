@@ -62,7 +62,7 @@ head(CTIS_Bavaria_available_dates)
 
 ```
 
-### Load data from the Opendata API
+### Get data through the Opendata API
 
 
 As already mentioned, country and region-level statistics are published daily via the Opendata API [2] and dashboards.
@@ -88,7 +88,7 @@ CTIS_open_data_region(indicator = "vaccine_acpt",
                        daterange = "20210501-20210503")
 
 ```
-### Microdata API
+### Get data through the Microdata API
 
 While the open data is available without an account,  the microdata API requires an account that can be requested here by researchers: https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/
 
