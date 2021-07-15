@@ -15,8 +15,9 @@ Data for the United States is not included in the Global COVID-19 Trends and Imp
 
 Country and region-level statistics are published daily via the opendata API and dashboards, and microdata is available for researchers via data use agreements. Over half a million responses are collected daily. For more information on the data, see https://covidmap.umd.edu/. While the open data is available without an account, the microdata API requires an account that can be requested here: https://dataforgood.fb.com/docs/covid-19-symptom-survey-request-for-data-access/.
 
+## Get started with the CTIS package
 
-## Installation
+### Installation
 
 First things first, to download the package, please download the package and load it.
 
