@@ -5,6 +5,14 @@ R based Global COVID-19 Trends and Impact Survey Microdata and Opendata API Inte
 
 This package offers an R interface for the APIs connected to the Global COVID-19 Trends and Impact Survey, formerly known as COVID-19 World Symptoms Survey.
 
+You can install and load it with the following code.
+
+``` r
+devtools::install_github("CaroHaensch/CTIS")
+library(CTIS)
+```
+
+
 ## The Global COVID-19 Trends and Impact Survey
 
 The University of Maryland Social Data Science Center Global COVID-19 Trends and Impact Survey [1], in partnership with Facebook, is available in 56 languages. A representative sample of Facebook users is invited on a daily basis to report on topics including, for example, symptoms, social distancing behavior, vaccine acceptance, mental health issues, and financial constraints. Facebook provides weights to reduce nonresponse and coverage bias. 
