@@ -2,7 +2,7 @@ Package: CTIS
 Type: Package
 Title: R based Global COVID-19 Trends and Impact Survey Microdata and Opendata API Interface
 Version: 0.0.1
-Author: Yue Xiong, Anna-Carolina Haensch
+Author: Anna-Carolina Haensch, Yue Xiong
 Maintainer: Anna-Carolina Haensch <anna-carolina.haensch@stat.uni-muenchen.de>, Yue Xiong <yue.xiong@stat.uni-muenchen.de>
 Description: Provides an interface to the Global COVID-19 Trends and Impact Survey Microdata and Opendata API.
 License: GPL-3
