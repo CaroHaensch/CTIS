@@ -32,7 +32,7 @@ CTIS_open_data_region <- function(indicator, type, country, region, daterange) {
 # core of the function adapted from
 # https://gisumd.github.io/COVID-19-API-Documentation/docs/tutorials/tutorials.html
     # concatenate the strings for the retrieving url path
-    path <- paste0("https://covidmap.umd.edu/api/resources?indicator=", indicator,
+    path <- paste0("https://covidmap.umd.edu/apiv2/resources?indicator=", indicator,
                   "&type=", type, "&country=", country, "&region=", region,
                   "&daterange=", daterange)
     # request the data from api
